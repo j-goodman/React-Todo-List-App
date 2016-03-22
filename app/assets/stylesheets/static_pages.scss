@@ -1,3 +1,26 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1, h2, body, p {
+  font-family: Georgia;
+}
+
+h2 {
+  padding: 12px;
+  border: 1px solid gold;
+  width: 240px;
+  text-align: center;
+  border-radius: 4px;
+  background: gold;
+}
+
+p {
+  padding: 12px;
+  border: 1px solid gold;
+  width: 240px;
+  min-height: 60px;
+  text-align: center;
+  border-radius: 4px;
+  background: gold;
+}
