@@ -5,7 +5,7 @@ class Api::TodosController < ApplicationController
   end
 
   def update
-    todo = Todo.update!(todo_params)
+    todo = Todo.find(params[:id]).update!(todo_params)
     render json: todo
   end
 
@@ -25,6 +25,6 @@ class Api::TodosController < ApplicationController
 
   private
   def todo_params
-    params.permit(:todo).require(:id, :title, :body, :done)
+    params.require(:todo).permit(:id, :title, :body, :done)
   end
 end
