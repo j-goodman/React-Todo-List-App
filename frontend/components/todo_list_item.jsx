@@ -12,18 +12,15 @@ var TodoListItem = React.createClass({
     this.setState( {displayDetail: !this.state.displayDetail});
   },
 
-  handleDestroy: function () {
-    TodoStore.destroy(this.props.todo.id);
-  },
-
   render: function () {
     return (
       <article onClick={this.toggleDetail}>
         <h2>
           { this.props.todo.title }
+          <br/>
+          <DoneButton todo={this.props.todo}/>
         </h2>
         <TodoDetailView display={this.state.displayDetail} todo={this.props.todo}/>
-        <DoneButton todo={this.props.todo}/>
       </article>
     );
   }

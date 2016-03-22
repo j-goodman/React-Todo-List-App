@@ -27,20 +27,22 @@ var TodoForm = React.createClass({
 
   render: function () {
     return (
-      <form onSubmit={this.handleSubmit}>
-        <label> Title
+      <form onSubmit={this.handleSubmit} className="todo-form">
+        <label> Title:
           <input type="text"
           ref={ function (ref) {this.todoTitle = ref;}.bind(this) }
           onChange={this.updateTitle}
           value={this.state.title} />
         </label>
-        <label> Body
+        <br/>
+        <label> Body:
           <input type="text"
           ref={ function (ref) {this.todoBody = ref;}.bind(this) }
           onChange={this.updateBody}
           value={this.state.body} />
         </label>
-        <input type="submit" value="Create Todo" />
+        <br/>
+        <input className="todo-button" type="submit" value="Create Todo" />
       </form>
     );
   }

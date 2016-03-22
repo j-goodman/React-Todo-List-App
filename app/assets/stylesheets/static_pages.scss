@@ -1,21 +1,90 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+* {
+  font-family: inherit;
+}
 
 h1, h2, body, p {
   font-family: Georgia;
+  background: black;
+  margin: 0;
+}
+
+h1 {
+  color: white;
+  padding: 12px;
+  text-align: center;
+  color: gold;
+}
+
+#root {
+  width: 460px;
+  background: rebeccapurple;
+  margin: auto;
+  padding: 12px;
+  border-radius: 20px;
+}
+
+input[type="text"] {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  background: rebeccapurple;
+  color: gold;
+  border: 1px solid gold;
+  border-radius: 4px;
+}
+
+.todo-button, button {
+  display: block;
+  width: 50%;
+  padding: 10px;
+  margin: auto;
+  margin-top: 10px;
+  border: 1px solid rebeccapurple;
+  background: rebeccapurple;
+  color: gold;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.todo-button:hover, button:hover {
+  opacity: 1;
+  box-shadow: 5px white;
+  cursor: pointer;
+  box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.75);
+}
+
+.delete-button {
+  background: red;
+  color: black;
+  border: 1px solid red;
+}
+
+.todo-form {
+  width: 240px;
+  text-align: center;
+  margin: 20px auto;
+  display: block;
+  padding: 12px;
+  border: 1px solid gold;
+  border-radius: 4px;
+  background: gold;
 }
 
 h2 {
+  margin: auto;
   padding: 12px;
   border: 1px solid gold;
   width: 240px;
   text-align: center;
   border-radius: 4px;
   background: gold;
+  cursor: pointer;
 }
 
-p {
+.detail-view {
+  margin: auto;
   padding: 12px;
   border: 1px solid gold;
   width: 240px;
@@ -24,4 +93,9 @@ p {
   border-radius: 4px;
   background: gold;
   margin-bottom: 12px;
+
+}
+
+h2:hover {
+  opacity: .7;
 }

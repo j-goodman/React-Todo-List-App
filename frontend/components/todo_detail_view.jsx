@@ -10,9 +10,10 @@ var TodoDetailView = React.createClass({
   render: function () {
     if ( this.props.display ) {
       return (
-          <p>
+          <p className="detail-view">
             { this.props.todo.body }
-            <button onClick={this.handleDestroy}>Delete</button>
+            <br/>
+            <button className="delete-button" onClick={this.handleDestroy}>Delete</button>
           </p>
       );
     } else {
